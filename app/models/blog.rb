@@ -1,7 +1,7 @@
 class Blog < ApplicationRecord
  
   has_many :blogs
-  paginates_per 7
+  paginates_per 3
   
   validates :title, presence: true, length: { maximum: 50 }
   validates :content, presence: true, length: { maximum: 140 }
